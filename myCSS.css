@@ -1,0 +1,684 @@
+body {
+  background-color: #f1f1f1;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 50px auto;
+  font-family: Raleway;
+  padding: 20px;
+  width: 680px;
+  max-width: 680px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+  color: black;
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border: 5px solid gray;
+}
+
+button {
+  color: #ffffff;
+  border: none;
+  min-width: 120px;
+  margin: 20px 2px;
+  font-size: 20px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.buttonAnswer {
+  background-color: #0276FD;
+  padding: 5px 5px;
+}
+
+.buttonNextTrial {
+  background-color: #50C878;
+  padding: 10px 10px;
+}
+
+.buttonNextGame {
+  background-color: #C70039;
+  padding: 20px 20px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+/* Hide all steps and tasks by default: */
+.tab {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+.score {
+  font-size: 28px;
+  color: #C70039
+}
+div.qBut{
+  display: inline-block;
+}
+div.endTask{
+  text-align: center;
+  position: absolute;
+  left: 350px;
+  bottom: 200px;
+}
+
+/* Beginning of experiment */
+
+
+#startDiv{
+  display: block;
+}
+#startTaskButton{
+  display: none;
+}
+
+
+/* learnRandomWalk part */
+
+#newM{
+  text-align: center;
+  position: relative;
+  top: 5px;
+  color: red;
+  font-size: 25px;
+}
+
+#lrnWlk_imgNew{
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+  right: 50px;
+}
+#lrnWlk_imgOld{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 5px solid gray;
+  right: 120px;
+}
+
+
+/* learnRandomPairs part */
+
+#newMP{
+  text-align: center;
+  position: relative;
+  top: 5px;
+  color: red;
+  font-size: 25px;
+}
+
+#lrnPrs_img1{
+  position: relative;
+  top: 150px;
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+  /*right:50px;*/
+}
+#threeDots_learnRandomPairs{
+  text-align: center;
+  position: relative;/*fixed;*/
+  top: 150px;
+  color: green;/*blue;*/
+  font-size: 50px;
+  left: 25px;
+}
+#lrnPrs_img2{
+  position: relative;
+  top: 150px;
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+  left: 50px;
+}
+
+/* Piles task */
+#pilesImgsDiv{
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px 10px 310px 10px;
+}
+
+.pileName {
+  padding-left: 20px;
+  font-family: Cursive;
+}
+
+#pile1{
+  width: 15%;
+  height: 200px;
+  float: left;
+  margin-left: 15%;
+
+}
+#pile2{
+  margin-left: 55%;
+  height: 200px;
+}
+
+#pileTarget{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 4px solid gray;
+  left:450px;
+}
+
+#pile1Img1{
+}
+#pile1Img2{
+  position:relative;
+  bottom:40px;
+  left:20px;
+}
+#pile1Img3{
+  position:relative;
+  bottom:80px;
+  left:40px;
+}
+#pile1Img4{
+  position:relative;
+  bottom:120px;
+  left:60px;
+}
+#pile2Img1{
+}
+#pile2Img2{
+  position:relative;
+  bottom:40px;
+  left:20px;
+}
+#pile2Img3{
+  position:relative;
+  bottom:80px;
+  left:40px;
+}
+#pile2Img4{
+  position:relative;
+  bottom:120px;
+  left:60px;
+}
+
+#enter2continueMsg_pile{
+
+}
+#isCorrectMsg_pile{
+
+}
+
+
+
+
+
+
+
+#endThanks{
+  margin-top: 80px;
+  font-size: 20px;
+}
+#endExpReachT{
+  font-size: 20px;
+  /*margin-top: 150px;
+  margin-left: 130px;*/
+}
+
+
+#targetPic{
+  font-size: 20px;
+  /*width: 250px;
+  height: 150px;*/
+}
+
+#tarPt{
+  width: 100px;
+  height: 100px;
+  border: 3px solid gray;
+  /*margin: 10px;*/
+}
+#currPt{
+  display:inline;
+  width: 100px;/*80px;*/
+  height: 100px;/*80px;*/
+  border: 3px solid gray;
+}
+#navig{
+  float: center;
+  width: 1000px;
+  /*height: 500px;*/
+}
+#tarPid{
+  position:relative;
+  /*bottom: 50px;*/
+  left: 270px;/*180px;*/
+  top:135px;/*150px;*/
+  /*right:500px;*/
+  display: none;
+  width: 450px;
+  height: 250px;
+}
+#cPic{
+  position: relative;
+  right:400px;/*500px;*/
+  /*left: 180px;*/
+  bottom: 50px;
+}
+#picT{
+  display: none;
+  position: relative;
+  left: 100px;
+  bottom: 230px;/*170px;*/
+}
+#chPic1{
+  position: relative;
+  bottom: 65px;
+  right:150px;
+  display:inline;
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#chPic2{
+  position: relative;
+  top: 5px;
+  right:150px;
+  /*left: 15px;
+  top: 40px;*/
+  display:inline;
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#skip{
+  /*display: none;*/
+  position: relative;
+  top: 250px;/*300px;*/
+  left:110px;
+  /*right:180px;*/
+  background-color: white;
+}
+#tarPQ{
+  width: 100px;
+  height: 100px;
+  border: 3px solid gray;
+  /*margin: 10px;*/
+}
+#tarPidQ{
+  position:relative;
+  /*bottom: 50px;*/
+  left: 270px;/*180px;*/
+  top:150px;/*135px;/*
+  /*right:500px;*/
+  /*display: none;*/
+  width: 450px;
+  height: 270px;
+}
+}
+#iqcon{
+  position: relative;
+  left: 10px;
+  /*bottom: 300px;470px;*/
+}
+#Q1{
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#Q2{
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#im1Q{
+  position: relative;
+  right: 220px;
+  bottom: 280px;
+}
+#im2Q{
+  position: relative;
+  /*left: 250px;*/
+  right: 220px;
+  bottom: 250px;/*370px;*/
+}
+
+
+
+#startPic{
+  font-family: serif;
+  font-size: 20px;
+}
+#dispPc{
+  display: none;
+  position: relative;
+  /*padding: 15px 32px;*/
+  background-color: red;
+  /*margin-top: 50px;
+  margin-right: 300px;*/
+  right: 90px;
+  top: 200px;
+}
+#allPic{
+  display:none;
+}
+
+#currPic{
+  font-family: serif;
+  font-size: 18px;
+}
+/*#sPic{
+margin-top: 400px;
+}*/
+
+
+#LbotT{
+  position: relative;
+  left: 70px;
+  bottom:10px;
+  /*right: 0px;
+  top:0px;*/
+
+}
+#RbotT{
+  position: relative;
+  /*left: 50px;
+  bottom:50px;*/
+
+}
+#myCanvas{
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+}
+
+#chPicR1{
+  /*position: relative;
+  right: 30px;
+  top: 20px;*/
+  display:none;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+
+#chPicR2{
+  /*position: relative;
+  left: 15px;
+  top: 40px;*/
+  display:none;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#LbotTR{
+  display:none;
+  position: relative;
+  right:70px;
+  bottom: 10px;
+  width: 150px;
+  height: 150px;
+}
+#RbotTR{
+  display:none;
+  position: relative;
+  top: 50px;
+  right: 70px;
+  width: 150px;
+  height: 150px;
+}
+
+#dispPcRW{
+  display: none;
+  position: relative;
+  /*padding: 15px 32px;*/
+  background-color: red;
+  /*margin-top: 50px;
+  margin-right: 300px;*/
+  right: 220px;
+  top: 210px;
+}
+#skipR{
+  display: none;
+  position: relative;/*absolute;*/
+  /*padding: 15px 32px;*/
+  background-color: white;
+  /*margin-top: 50px;
+  margin-right: 300px;*/
+  right: 300px;
+  top: 190px;
+}
+#currPicR{
+  font-family: serif;
+  font-size: 18px;
+}
+#currPtR{
+  display:none;
+  width: 110px;
+  height: 110px;
+  border: 5px solid gray;
+}
+#nextRW{
+  display:none;
+  position:fixed;
+  right: 1000px;
+  bottom: 20px;
+}
+#cPicR{
+  position: relative;
+  left: 150px;
+  bottom: 250px;
+}
+
+#im1{
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#im2{
+  width: 140px;
+  height: 140px;
+  border: 5px solid gray;
+}
+#im3{
+  width: 100px;
+  height: 100px;
+  border: 5px solid gray;
+}
+#im1d{
+  position: relative;
+  left: 250px;
+  top: 50px;*/
+}
+#im2d{
+  position: relative;
+  right: 250px;
+  bottom: 170px;
+}
+#im3d{
+  position: relative;
+  /*left: 265px;*/
+  bottom: 230px;*/
+}
+#ynIsB{
+  position: relative;
+  left: 0px;
+  bottom: 220px;
+}
+#im3cor{
+  position: relative;
+  left: 0px;
+  bottom: 100px;
+}
+#im3con{
+  position: relative;
+  left: 0px;
+  bottom: 100px;
+}
+/*#Nm{
+position: relative;
+left: 0px;
+top: 0px;
+}
+#Ym{
+position: relative;
+right: 0px;
+top: 0px;
+}*/
+#nextIsM{
+  position:fixed;
+  right: 950px;
+  bottom: 50px;
+}
+#isCrm{
+  font-family: serif;
+  font-size: 30px;
+}
+#cpicRMv{
+  position: relative;
+  bottom: 70px/*50px;*/
+}
+#imRM0{
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#imRM1{
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#imRM2{
+  position: relative;
+  right: 30px;
+  top: 30px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#imRM3{
+  position: relative;
+  right: 60px;
+  top: 60px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#imRM4{
+  position: relative;
+  right: 90px;
+  top: 90px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#isThis{
+  position: relative;
+  left: 400px;
+  bottom: 55px;
+  width: 80px;
+  height: 80px;
+  border: 5px solid gray;
+}
+#rMvPart{
+  display:none;
+}
+#randMVins{
+  font-family: serif;
+  font-size: 20px;
+}
+
+#im12M0{
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#im12M00{
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#im12M1{
+  position: relative;
+  right: 30px;
+  top: 30px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#im12M2{
+  position: relative;
+  right: 60px;
+  top: 60px;
+  width: 120px;
+  height: 120px;
+  border: 5px solid gray;
+}
+#isThis12div{
+  position: relative;
+  left: 150px;/*140px;/*800px;*/
+  bottom: 25px;/*40px;*/
+}
+#isThis12{
+  /*position: relative;
+  left: 750px;
+  bottom: 25px;/*30px;*/
+  width: 80px;
+  height: 80px;
+  border: 5px solid gray;
+}
+#next12Mv{
+  position:fixed;
+  right: 1150px;
+  bottom: 50px;
+}
+#nextSp{
+  position:fixed;
+  right: 1150px;
+  bottom: 50px;
+}
+#cpic12Mv{
+  position: relative;
+  right: 60px;
+  bottom: 100px;/*50px;/*90*/
+  /*position: relative;
+  bottom: 50px;*/
+}
+
+
+#instructionsT2{
+  clear:both;
+  font-size: 18px;
+}
+#instructionsT{
+  clear:both;
+  font-size: 18px;
+}
+
+#endThanksT{
+  margin-top: 100px;
+  font-size: 30px;
+}
